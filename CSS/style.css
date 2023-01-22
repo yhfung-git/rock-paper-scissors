@@ -1,9 +1,30 @@
 :root {
-  --background: #8DCBE6;
-  --text: #13005A;
+  --background: #EAE7B1;
+  --text: #3C6255;
+  --line: #A6BB8D;
 }
 
 body {
   background-color: var(--background);
   color: var(--text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 1rem;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  background: var(--line);
+  width: 100%;
+  height: 3px;
+  margin-top: 40px;
 }
