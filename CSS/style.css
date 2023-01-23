@@ -13,6 +13,12 @@ body {
 .container {
   max-width: 1000px;
   margin: auto;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 35px;
+  margin-top: 100px;
 }
 
 .title {
@@ -24,4 +30,8 @@ body {
   margin: 0;
   padding: 35px 0;
   background-color: var(--box);
+}
+
+.buttons >button {
+  font-size: 50px;
 }
