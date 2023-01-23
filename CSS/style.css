@@ -1,12 +1,13 @@
 :root {
   --background: #EAE7B1;
   --text: #3C6255;
-  --line: #A6BB8D;
+  --box: #A6BB8D;
 }
 
 body {
   background-color: var(--background);
   color: var(--text);
+  margin: 0;
 }
 
 .container {
@@ -18,13 +19,9 @@ body {
   text-align: center;
   font-size: 60px;
   letter-spacing: 1rem;
-}
-
-.title::after {
-  content: "";
-  display: block;
-  background: var(--line);
-  width: 100%;
-  height: 3px;
-  margin-top: 40px;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 35px 0;
+  background-color: var(--box);
 }
