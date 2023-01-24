@@ -1,9 +1,12 @@
-// Footer Copyright Date
-date = new Date();
-year = date.getFullYear();
-document.getElementById("current-year").innerHTML = year;
+// Game
+function getComputerChoice() {
+  const choices = ["rock", "paper", "scissors"]
+  return choices[Math.floor(Math.random() * choices.length
+  )]
+}
 
-// Scroll Duration
+
+// Scroll Duration for Play button
 $(document).ready(function(){
   // Add smooth scrolling to the class="play"
   $('.play').on('click', function(event) {
@@ -30,3 +33,9 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+// Footer Copyright Date
+date = new Date();
+year = date.getFullYear();
+document.getElementById("current-year").innerHTML = year;
