@@ -34,10 +34,15 @@ buttons.forEach(button => {
 });
 
 // Game function
+let playerScore = 0;
+let computerScore = 0;
+
 const computerRock = document.getElementById("computer-rock");
 const computerPaper = document.getElementById("computer-paper");
 const computerScissors = document.getElementById("computer-scissors");
-const result = document.getElementById("result")
+const result = document.getElementById("result");
+const userScore = document.getElementById("player-score");
+const compScore = document.getElementById("computer-score");
 
 function playGame(playerSelection) {
   const computerChoice = getComputerChoice();
@@ -45,18 +50,30 @@ function playGame(playerSelection) {
 
   if (computerChoice == "rock" && playerChoice == "paper") {
     result.innerText = "You win! Paper beats Rock!";
+    playerScore++;
+    userScore.innerText = `${playerScore}`;
   } else if (computerChoice == "rock" && playerChoice == "scissors") {
     result.innerText = "You lose! Rock beats Scissors";
+    computerScore++;
+    compScore.innerText = `${computerScore}`;
   } else if (computerChoice == "paper" && playerChoice == "scissors") {
     result.innerText = "You win! Scissors beats Paper";
+    playerScore++;
+    userScore.innerText = `${playerScore}`;
   } else if (computerChoice == "paper" && playerChoice == "rock") {
     result.innerText = "You lost! Paper beats Scissors";
+    computerScore++;
+    compScore.innerText = `${computerScore}`;
   } else if (computerChoice == "scissors" && playerChoice == "rock") {
     result.innerText = "You win! Rock beats Scissors";
+    playerScore++;
+    userScore.innerText = `${playerScore}`;
   } else if (computerChoice == "scissors" && playerChoice == "paper") {
     result.innerText = "You lose! Scissors beats Paper";
+    computerScore++;
+    compScore.innerText = `${computerScore}`;
   } else if (computerChoice == playerChoice) {
-    result.innerText = "Tie";
+    result.innerText = "Tie!";
   }
 
   // Change color depends on the computer choice
@@ -75,20 +92,18 @@ function playGame(playerSelection) {
   }
 };
 
-// Game and Score
-let playerScore = 0;
-let computerScore = 0;
-
-function game() {
-  for (let i = 0; i < 5; i++) {
-
-  };
-};
-
-
 // Restart game
 const restart = document.querySelector(".restart");
 
 restart.addEventListener("click", function() {
-  window.location.reload();
+  // window.location.reload();
+  userScore.innerText = 0;
+  compScore.innerText = 0;
+  result.innerText = "";
+  computerRock.style.color = "#3C6255";
+  computerPaper.style.color = "#3C6255";
+  computerScissors.style.color = "#3C6255";
+  userRock.style.color = "#3C6255";
+  userPaper.style.color = "#3C6255";
+  userScissors.style.color = "#3C6255";
 });
