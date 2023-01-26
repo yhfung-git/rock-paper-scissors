@@ -125,3 +125,5 @@ restart.addEventListener("click", function() {
   pop.classList.remove("active");
   box.classList.remove("active");
 });
+
+playGame();
