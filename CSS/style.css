@@ -99,17 +99,12 @@ nav {
 
 .user-buttons >button {
   font-size: 100px;
-  background-color: var(--box);
+  background-color: transparent;
   border: none;
   border-radius: 100%;
   height: 150px;
   width: 150px;
   transition: .3s all ease-in-out;
-}
-
-.user-buttons >button:hover {
-  scale: 1.1;
-  box-shadow: rgba(166, 187, 141, 0.5) 0px 2px 8px 0px;
 }
 
 .user-buttons >button:hover i {
@@ -128,7 +123,7 @@ nav {
 
 .computer-buttons >button {
   font-size: 100px;
-  background-color: var(--box);
+  background-color: transparent;
   border: none;
   border-radius: 100%;
   height: 150px;
@@ -138,10 +133,11 @@ nav {
 /* Score */
 .score-container {
   border: 5px solid var(--text);
-  height: 70%;
+  height: 81%;
   width: 100%;
   position: relative;
-  top: 162px;
+  top: 100px;
+  border-radius: 3px;
 }
 
 .score {
@@ -150,6 +146,19 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   height: 60%;
+}
+
+#result {
+  border: 2px solid var(--text);
+  height: 25%;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  margin: 20px auto;
 }
 
 /* Footer */
@@ -176,10 +185,11 @@ footer a {
   cursor: pointer;
   color: var(--text);
   background-color: var(--box);
-  border-radius: 5px;
+  border-radius: 3px;
   height: 35px;
   width: 70px;
   transition: .3s all ease-in-out;
+  margin: 20px;
 }
 
 .restart:hover {
