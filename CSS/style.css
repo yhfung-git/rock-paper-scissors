@@ -133,10 +133,10 @@ nav {
 /* Score */
 .score-container {
   border: 5px solid var(--text);
-  height: 81%;
+  height: 68%;
   width: 100%;
   position: relative;
-  top: 100px;
+  top: 139px;
   border-radius: 3px;
 }
 
@@ -145,7 +145,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 60%;
+  height: 74%;
 }
 
 #result {
@@ -158,7 +158,7 @@ nav {
   display: flex;
   justify-content: center;
   border-radius: 3px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 }
 
 /* Footer */
@@ -188,11 +188,52 @@ footer a {
   border-radius: 3px;
   height: 35px;
   width: 70px;
-  transition: .3s all ease-in-out;
   margin: 20px;
 }
 
 .restart:hover {
   scale: 1.1;
   font-weight: bold;
+}
+
+/* Pop up information */
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.pop-up {
+  width: 33%;
+  border-radius: 3px;
+  background: var(--text);
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  position: fixed;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.pop-up.active {
+  visibility: visible;
+}
+
+.pop-up p {
+  color: var(--box);
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
 }
