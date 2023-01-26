@@ -104,8 +104,6 @@ function playGame(playerSelection) {
     pop.classList.add("active");
     box.classList.add("active");
   }
-
-  getComputerChoice();
 };
 
 playGame();
