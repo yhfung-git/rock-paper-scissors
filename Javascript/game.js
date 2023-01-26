@@ -104,7 +104,11 @@ function playGame(playerSelection) {
     pop.classList.add("active");
     box.classList.add("active");
   }
+
+  getComputerChoice();
 };
+
+playGame();
 
 // Restart game
 const restart = document.querySelector(".restart");
