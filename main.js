@@ -26,10 +26,10 @@ buttons.forEach(button => {
       userRock.style.color = "#A6BB8D";
       userScissors.style.color = "#A6BB8D";
     } else if (button.value === "scissors") {
-      userScissors.style.color = "#3C6255"
+      userScissors.style.color = "#3C6255";
       userPaper.style.color = "#A6BB8D";
       userRock.style.color = "#A6BB8D";
-    }
+    };
   });
 });
 
@@ -77,7 +77,7 @@ function playGame(playerSelection) {
     compScore.innerText = `${computerScore}`;
   } else if (computerChoice === playerChoice) {
     result.innerText = "Tie!";
-  }
+  };
 
   // Change color depends on the computer choice
   if (computerChoice === "rock") {
@@ -92,18 +92,18 @@ function playGame(playerSelection) {
     computerScissors.style.color = "#3C6255";
     computerPaper.style.color = "#A6BB8D";
     computerRock.style.color = "#A6BB8D";
-  }
+  };
 
   // End game
   if (playerScore === 3 ) {
-    text.innerText = "Congratulations! You won!"
+    text.innerText = "Congratulations! You won!";
     pop.classList.add("active");
     box.classList.add("active");
   } else if (computerScore === 3) {
-    text.innerText = "You lose! Try again!"
+    text.innerText = "You lose! Try again!";
     pop.classList.add("active");
     box.classList.add("active");
-  }
+  };
 };
 
 // Restart game
@@ -157,6 +157,6 @@ $(document).ready(function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }; // End if
   });
 });
