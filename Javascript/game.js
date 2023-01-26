@@ -1,3 +1,5 @@
+window.onload = playGame();
+
 // Computer choice, return rock, paper or scissors randomly
 const choices = ["rock", "paper", "scissors"];
 
@@ -125,5 +127,3 @@ restart.addEventListener("click", function() {
   pop.classList.remove("active");
   box.classList.remove("active");
 });
-
-playGame();
