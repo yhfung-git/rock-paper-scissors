@@ -33,17 +33,17 @@
 
         <!-- User Buttons -->
         <div class="user-buttons">
-          <button id="user-rock" value="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-          <button id="user-paper" value="paper"><i class="fa-regular fa-hand"></i></button>
-          <button id="user-scissors" value="scissors"><i class="fa-regular fa-hand-scissors" style="transform: rotate(84deg);"></i></button>
+          <button value="rock"><i class="fa-regular fa-hand-back-fist" id="user-rock" ></i></button>
+          <button value="paper"><i class="fa-regular fa-hand" id="user-paper" ></i></button>
+          <button value="scissors"><i class="fa-regular fa-hand-scissors" style="transform: rotate(84deg);" id="user-scissors"></i></button>
         </div>
 
         <!-- Computer Buttons -->
         <h2>Computer</h2>
         <div class="computer-buttons">
-          <button id="computer-rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-          <button id="computer-paper"><i class="fa-regular fa-hand"></i></button>
-          <button id="computer-scissors"><i class="fa-regular fa-hand-scissors" style="transform: rotate(84deg);"></i></button>
+          <button><i class="fa-regular fa-hand-back-fist" id="computer-rock"></i></button>
+          <button><i class="fa-regular fa-hand" id="computer-paper"></i></button>
+          <button><i class="fa-regular fa-hand-scissors" style="transform: rotate(84deg);" id="computer-scissors"></i></button>
         </div>
       </div>
 
@@ -53,6 +53,7 @@
         <div class="score">
           <p>You: 0</p>
           <p>Computer: 0</p>
+          <p id="result"></p>
         </div>
         <button class="restart">Restart</button>
       </span>
