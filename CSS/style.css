@@ -252,7 +252,7 @@ footer a {
 
   .container {
     grid-template-columns: none;
-    margin: 100px auto;
+    margin: 300px auto 100px auto;
   }
 
   .container h2 {
