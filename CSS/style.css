@@ -21,6 +21,18 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.container h2 {
+  font-size: 35px;
+}
+
 /* Navbar */
 nav {
   text-align: center;
@@ -34,25 +46,12 @@ nav {
   z-index: 2;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 80px auto;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-}
-
-.container h2 {
-  font-size: 35px;
-}
-
+/* Play Button */
 #game {
   padding-top: 100px;
   margin-top: 0;
 }
 
-
-/* Play Button */
 .play {
   font-size: 100px;
   background-color: var(--box);
@@ -236,4 +235,76 @@ footer a {
   font-size: 30px;
   font-weight: bold;
   width: 100%;
+}
+
+@media (max-width: 550px) {
+  #result {
+    width: calc(46% + 100px) !important;
+    transition: 1s all;
+  }
+}
+
+@media (max-width: 1040px) {
+  nav {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+
+  .container {
+    grid-template-columns: none;
+    margin: 100px auto;
+  }
+
+  .container h2 {
+    font-size: 25px;
+    margin: 15px auto;
+  }
+
+  .score-container {
+    height: 100%;
+    width: 80%;
+    top: 35px;
+    margin: auto;
+  }
+
+  .score {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .score p {
+    margin: 10px;
+  }
+
+  #result {
+    padding: 10px;
+    margin-bottom: 12px;
+    width: calc(70% + 100px);
+    transition: 1s all;
+  }
+
+  .user-buttons >button {
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .computer-buttons >button {
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .pop-up {
+    width: 90%;
+  }
+
+  .pop-up p {
+    font-size: 24px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 12px;
+  }
 }
